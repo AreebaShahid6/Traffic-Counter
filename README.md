@@ -18,7 +18,7 @@ with separate **IN** and **OUT** traffic counting.
 
 Traffic monitoring is one of the most important applications of Computer Vision in modern smart city infrastructure.
 
-This project demonstrates how AI can be used for:
+This project demonstrates how Artificial Intelligence can be used for:
 
 - Real-time traffic surveillance
 - Vehicle movement analysis
@@ -26,7 +26,15 @@ This project demonstrates how AI can be used for:
 - Traffic flow analytics
 - Intelligent transportation systems
 
-The system uses the powerful **YOLO11 object detection model** combined with **ByteTrack multi-object tracking** to maintain unique IDs for each vehicle and accurately count vehicles crossing predefined counting lines.
+The system combines the power of **YOLO11 object detection** with **ByteTrack multi-object tracking** to maintain unique IDs for each vehicle and accurately count vehicles crossing predefined counting lines.
+
+---
+
+# 🎥 Project Demo
+
+## ▶️ Watch Full Demo Video
+
+[![Watch Demo](https://img.youtube.com/vi/KBsqQez-O4w/0.jpg)](https://youtu.be/KBsqQez-O4w)
 
 ---
 
@@ -34,7 +42,7 @@ The system uses the powerful **YOLO11 object detection model** combined with **B
 
 ## ✅ Real-Time Vehicle Detection
 
-The project uses **YOLO11 Medium (`yolo11m.pt`)** for high-speed and accurate vehicle detection.
+Uses **YOLO11 Medium (`yolo11m.pt`)** for high-speed and accurate vehicle detection.
 
 Supported vehicle classes:
 
@@ -49,7 +57,7 @@ Supported vehicle classes:
 Integrated with **ByteTrack** to:
 
 - Assign unique IDs to vehicles
-- Maintain tracking consistency
+- Maintain stable tracking
 - Prevent duplicate counting
 
 ---
@@ -91,7 +99,7 @@ Bounding boxes are slightly reduced inward for:
 
 ## ✅ GPU Acceleration Support
 
-The project automatically uses CUDA if available for faster inference.
+The project automatically uses CUDA if available.
 
 ```python
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -115,7 +123,7 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 # 📂 Project Structure
 
 ```bash
-AI-Traffic-Vehicle-Counter/
+Traffic-Counter/
 │
 ├── video/
 │   └── traffic_video.mp4
@@ -138,7 +146,7 @@ AI-Traffic-Vehicle-Counter/
 ## 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/AI-Traffic-Vehicle-Counter.git
+git clone https://github.com/AreebaShahid6/Traffic-Counter.git
 ```
 
 ---
@@ -146,7 +154,7 @@ git clone https://github.com/your-username/AI-Traffic-Vehicle-Counter.git
 ## 2️⃣ Move into Project Directory
 
 ```bash
-cd AI-Traffic-Vehicle-Counter
+cd Traffic-Counter
 ```
 
 ---
@@ -231,7 +239,7 @@ The system uses COCO dataset class IDs.
 
 # 1️⃣ Video Input
 
-The system reads a traffic video using OpenCV:
+The system reads traffic footage using OpenCV:
 
 ```python
 cap = cv2.VideoCapture(video_path)
@@ -241,8 +249,8 @@ Supported inputs:
 
 - Highway footage
 - CCTV videos
-- Drone traffic recordings
-- Road surveillance videos
+- Drone recordings
+- Traffic surveillance footage
 
 ---
 
@@ -266,7 +274,7 @@ imgsz=640
 
 # 3️⃣ Multi-Object Tracking using ByteTrack
 
-ByteTrack assigns a unique ID to each detected vehicle.
+ByteTrack assigns a unique ID to every detected vehicle.
 
 ```python
 tracker="bytetrack.yaml"
@@ -282,7 +290,7 @@ This ensures:
 
 # 4️⃣ Vehicle Center Point Calculation
 
-The center point of each vehicle is calculated:
+The center point of each vehicle is calculated using:
 
 ```python
 cx = int((x1 + x2) / 2)
@@ -301,7 +309,7 @@ Vehicle movement history is stored:
 track_history[track_id].append((cx, cy))
 ```
 
-This allows the system to determine direction.
+This allows the system to determine vehicle direction.
 
 ---
 
@@ -521,7 +529,7 @@ or
 
 Planned future upgrades:
 
-- 🚀 Speed estimation
+- 🚀 Vehicle speed estimation
 - 🚀 Lane detection
 - 🚀 Vehicle re-identification
 - 🚀 Heatmap visualization
@@ -596,21 +604,17 @@ with proper attribution.
 
 # 👨‍💻 Author
 
-## Your Name
+## Areeba Shahid
 
 AI & Computer Vision Developer
 
 ### GitHub
 
-https://github.com/your-username
-
-### LinkedIn
-
-https://linkedin.com/in/your-profile
+https://github.com/AreebaShahid6
 
 ### Email
 
-your-email@example.com
+shahidareeba922@gmail.com
 
 ---
 

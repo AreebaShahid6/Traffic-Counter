@@ -4,31 +4,20 @@ An advanced AI-powered traffic monitoring and vehicle counting system developed 
 
 This project analyzes traffic footage and automatically detects, tracks, and counts vehicles moving in different directions with a modern neon-style analytics dashboard.
 
-The system currently supports:
-
-* 🚗 Cars
-* 🚌 Buses
-* 🚚 Trucks
-
-with separate **IN** and **OUT** traffic counting.
-
 ---
 
-# 📌 Project Overview
+# 🎥 Demo Video
 
-Traffic monitoring is one of the most important applications of Computer Vision in modern smart city infrastructure.
+Watch the complete project demo here:
 
-This project demonstrates how Artificial Intelligence can be used for:
+▶️ **YouTube Demo:**
+[AI Traffic Vehicle Counter Demo Video](https://youtu.be/LFopCDnvidM?si=XZdSBQuvozvEeHap&utm_source=chatgpt.com)
 
-* Real-time traffic surveillance
-* Vehicle movement analysis
-* Direction-based vehicle counting
-* Traffic flow analytics
-* Intelligent transportation systems
-* Vehicle trajectory tracking
-* Basic speed estimation
+### 📺 Preview Thumbnail
 
-The system combines the power of **YOLO11 object detection** with **ByteTrack multi-object tracking** to maintain unique IDs for each vehicle and accurately count vehicles crossing predefined counting lines.
+```markdown
+[![Watch the Demo](https://img.youtube.com/vi/LFopCDnvidM/maxresdefault.jpg)](https://youtu.be/LFopCDnvidM)
+```
 
 ---
 
@@ -36,13 +25,13 @@ The system combines the power of **YOLO11 object detection** with **ByteTrack mu
 
 ## ✅ Real-Time Vehicle Detection
 
-Uses **YOLO11 Medium (`yolo11m.pt`)** for high-speed and accurate vehicle detection.
+Uses **YOLO11 Medium (`yolo11m.pt`)** for fast and accurate vehicle detection.
 
 Supported vehicle classes:
 
-* Car
-* Bus
-* Truck
+* 🚗 Car
+* 🚌 Bus
+* 🚚 Truck
 
 ---
 
@@ -59,7 +48,7 @@ Integrated with **ByteTrack** to:
 
 ## ✅ Direction-Based Vehicle Counting
 
-The system intelligently analyzes movement trajectories to determine:
+The system intelligently determines:
 
 * Vehicles entering the scene (**IN COUNT**)
 * Vehicles leaving the scene (**OUT COUNT**)
@@ -70,7 +59,7 @@ Each vehicle is counted only once using tracking IDs.
 
 ## ✅ Live Analytics Dashboard
 
-Professional real-time UI overlay includes:
+Professional real-time overlay includes:
 
 * IN / OUT counters
 * Vehicle totals
@@ -97,7 +86,7 @@ This helps visualize:
 
 ## ✅ Speed Estimation
 
-The system estimates vehicle motion speed using movement distance between tracked points.
+The system estimates motion speed using tracked point distances.
 
 ```python
 dist = np.sqrt((points[-1][0] - points[-5][0])**2 +
@@ -355,9 +344,7 @@ Each vehicle is counted only once using unique tracking IDs.
 
 # 🖥️ User Interface Components
 
----
-
-# 🔹 Top Information Bar
+## 🔹 Top Information Bar
 
 Displays:
 
@@ -367,11 +354,11 @@ Displays:
 
 ---
 
-# 🔹 Left Dashboard Panel
+## 🔹 Left Dashboard Panel
 
 Displays:
 
-## OUT COUNT
+### OUT COUNT
 
 * Car count
 * Bus count
@@ -380,11 +367,11 @@ Displays:
 
 ---
 
-# 🔹 Right Dashboard Panel
+## 🔹 Right Dashboard Panel
 
 Displays:
 
-## IN COUNT
+### IN COUNT
 
 * Car count
 * Bus count
@@ -393,7 +380,7 @@ Displays:
 
 ---
 
-# 🔹 Detection Overlay
+## 🔹 Detection Overlay
 
 Displays:
 
@@ -582,7 +569,7 @@ AI & Computer Vision Developer
 
 ### GitHub
 
-[AreebaShahid6](https://github.com/AreebaShahid6?utm_source=chatgpt.com)
+[AreebaShahid6 GitHub Profile](https://github.com/AreebaShahid6?utm_source=chatgpt.com)
 
 ### Email
 
@@ -608,7 +595,7 @@ Special thanks to:
 * [Ultralytics YOLO](https://www.ultralytics.com/?utm_source=chatgpt.com)
 * [OpenCV](https://opencv.org/?utm_source=chatgpt.com)
 * [PyTorch](https://pytorch.org/?utm_source=chatgpt.com)
-* [ByteTrack](https://github.com/ifzhang/ByteTrack?utm_source=chatgpt.com)
+* [ByteTrack GitHub Repository](https://github.com/ifzhang/ByteTrack?utm_source=chatgpt.com)
 
 for making advanced computer vision accessible.
 
